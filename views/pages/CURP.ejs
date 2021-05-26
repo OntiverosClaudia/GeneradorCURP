@@ -1,0 +1,46 @@
+<!-- Contenido -->
+<div class="container">
+    <div class="card text-center">
+        <div class="card-header">
+            <h4>CURP</h4>
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">Datos del solicitante: </h4>
+            <table class="table col-md-6" align="center">
+                <tbody>
+                    <tr class="table-borderless">
+                        <td><strong>Nombre(s):</strong></td>
+                        <td><%= datos.nombre.toUpperCase() %></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Apellido paterno:</strong></td>
+                        <td><%= datos.Apaterno.toUpperCase() %></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Apellido materno:</strong></td>
+                        <td><%= datos.Amaterno.toUpperCase() %></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fecha de nacimiento:</strong></td>
+                        <td><%= datos.fecha %></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sexo:</strong></td>
+                        <td><%= datos.sexo == 'M' ? 'MUJER' : 'HOMBRE' %></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Entidad de nacimiento:</strong></td>
+                        <td><%= MandarC %></td>
+                    </tr>
+                    <tr class="bt-1">
+                        <td><strong>CURP:</strong></td>
+                        <td><%= MostrarCURP %></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="card-footer">
+            <a href="/" class="btn btn-outline-dark">Volver</a>
+        </div>
+    </div>
+</div>

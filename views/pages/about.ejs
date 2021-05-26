@@ -1,0 +1,23 @@
+<!-- Banner -->
+<%- contentFor('micss') %>
+<section class="hero">
+    <div class="hero-content">
+        <h2>All about us</h2>
+        <p>Programación web</p>
+        <a href="/contact" class="btn btn-large btn-primary">Contáctanos</a>
+    </div>
+</section>
+<!-- Contenido -->
+<%- contentFor('body') %>
+<div class="jumbotron text-center">
+    <h1>Great Team</h1>
+    <div class="row">
+        <% for (item of usuarios) { %>
+        <div class="col-sm-3">
+            <h2> <%- item.name %> </h2>
+            <img src="<%- item.avatar %>" class="img-fluid">
+            <h3> <%- item.email %> </h3>
+        </div>
+        <% } %>
+    </div>
+</div>

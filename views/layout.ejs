@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/img/icon.png">
+    <title>My Site 2.1</title>
+</head>
+
+<body>
+    <!-- Menu -->
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbar-brand" href="#">My Site 2.1</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main content-->
+    <%-  defineContent ('micss')   %>
+    <main>
+        <div class="container">
+            <%- body %>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        Awesome Site. Copyright &copy; 2021
+    </footer>
+
+    <script src="bootstrap/js/jquery-3.6.0.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

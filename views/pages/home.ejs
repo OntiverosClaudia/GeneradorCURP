@@ -1,0 +1,86 @@
+<!-- Contenido: Formulario -->
+<div class="container">
+    <h3 align="center" class="pb-5" style="color: #28a745;">Consulta tu CURP</h3>
+    <form action="/" method="post">
+        <!-- Fila 1 -->
+        <div class="form-row">
+            <!-- En lugar de columna es una fila y con tiene 2 elementos :c -->
+            <div class="col-md-6 col-xs-12 pb-4">
+                <label for="nombre">Nombre(s):</label>
+                <input type="text" class="form-control" placeholder="Ingresa nombre" required pattern="[A-Za-zñÑ ]+"
+                    name="nombre">
+            </div>
+            <div class="col-md-6 col-xs-12 pb-4">
+                <label for="Apaterno">Apellido paterno:</label>
+                <input type="text" class="form-control" placeholder="Ingresa apellido paterno" required
+                    pattern="[A-Za-zñÑ ]+" name="Apaterno">
+            </div>
+        </div>
+        <!-- Fila 2 -->
+        <div class="form-row">
+            <div class="col-md-6 col-xs-12 pb-4">
+                <label for="Amaterno">Apellido materno:</label>
+                <input type="text" class="form-control" placeholder="Ingresa apellido materno" pattern="[A-Za-zñÑ ]+"
+                    name="Amaterno">
+            </div>
+            <div class="col-md-6 col-xs-12 pb-4">
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" class="form-control" placeholder="Ingresa fecha" name="fecha">
+            </div>
+        </div>
+        <!-- Fila 3 -->
+        <div class="form-row">
+            <div class="col-md-6 col-xs-12 pb-3">
+                <label for="sexo">Sexo:</label>
+                <select class="campos form-control form-selected select small" name="sexo" required="true">
+                    <option>Selecciona el sexo</option>
+                    <option value="M">Mujer</option>
+                    <option value="H">Hombre</option>
+                </select>
+            </div>
+            <div class="col-md-6 col-xs-12 pb-3">
+                <label for="sexo">Estado de nacimiento:</label>
+                <select class="campos form-control form-selected select small" name="estado" required="true">
+                    <option value="" disabled="" selected="">Selecciona el estado</option>
+                    <option value="AS">Aguascalientes</option>
+                    <option value="BC">Baja California</option>
+                    <option value="BS">Baja California Sur</option>
+                    <option value="CC">Campeche</option>
+                    <option value="CL">Coahuila</option>
+                    <option value="CM">Colima</option>
+                    <option value="CS">Chiapas</option>
+                    <option value="CH">Chihuahua</option>
+                    <option value="DF">Ciudad de México</option>
+                    <option value="DG">Durango</option>
+                    <option value="GT">Guanajuato</option>
+                    <option value="GR">Guerrero</option>
+                    <option value="HG">Hidalgo</option>
+                    <option value="JC">Jalisco</option>
+                    <option value="MC">Estado de México</option>
+                    <option value="MN">Michoacán</option>
+                    <option value="MS">Morelos</option>
+                    <option value="NT">Nayarit</option>
+                    <option value="NL">Nuevo León</option>
+                    <option value="OC">Oaxaca</option>
+                    <option value="PL">Puebla</option>
+                    <option value="QT">Querétaro</option>
+                    <option value="QR">Quintana Roo</option>
+                    <option value="SP">San Luis Potosí</option>
+                    <option value="SL">Sinaloa</option>
+                    <option value="SR">Sonora</option>
+                    <option value="TC">Tabasco</option>
+                    <option value="TS">Tamaulipas</option>
+                    <option value="TL">Tlaxcala</option>
+                    <option value="VZ">Veracruz</option>
+                    <option value="YN">Yucatán</option>
+                    <option value="ZS">Zacatecas</option>
+                    <option value="NE">Nacido en el extranjero</option>
+                </select>
+            </div>
+        </div>
+        <!-- MiddleWare que genere de manera aleatoria 3 valores(que serian los últimos 3 valores de RFC de preferencia 2 letras y un número). -->
+        <div class="pt-5" align="center">
+            <button type="submit" class="btn btn-outline-success btn-lg">Obtener</button>
+        </div>
+    </form>
+</div>
