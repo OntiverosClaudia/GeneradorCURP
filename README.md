@@ -1,4 +1,4 @@
-### :moyai: Simulador de generador de Curp :moyai:
+## :moyai: Simulador de generador de Curp :moyai:
 
 
-Utilizar con sabiduria.
+Utilizar con sabiduría.
